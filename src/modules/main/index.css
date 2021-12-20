@@ -1,0 +1,42 @@
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  gap: 100px;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  width: 270px;
+}
+h4 {
+  font-size: 2rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card--image {
+  width: 100%;
+}
+.card--wrapper {
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 168px;
+  position: absolute;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card--wrapper p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 14px;
+  height: 35px;
+  width: 250px;
+}

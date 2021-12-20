@@ -1,0 +1,27 @@
+.header__nav {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+.header__banner {
+  display: flex;
+  margin-bottom: 60px;
+}
+.header__banner img {
+  margin: 0 auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+.nav--wrapper {
+  margin: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

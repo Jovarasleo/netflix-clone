@@ -1,5 +1,6 @@
 import "./index.css";
-import banner from "../../images/banner.png";
+import Button from "../button";
+
 import logo from "../../images/logo.svg";
 function Header() {
   return (
@@ -7,11 +8,10 @@ function Header() {
       <div className="header__nav">
         <div className="nav--wrapper">
           <img src={logo} alt="" />
-          <button>Sign In</button>
+          <Button to="/login" className={"button"}>
+            Sign In
+          </Button>
         </div>
-      </div>
-      <div className="header__banner">
-        <img src={banner} alt="" />
       </div>
     </header>
   );

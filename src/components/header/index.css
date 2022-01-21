@@ -6,7 +6,19 @@
 }
 .header__banner {
   display: flex;
+  max-height: 490px;
   margin-bottom: 60px;
+  width: 100%;
+  position: relative;
+}
+.header__banner::after {
+  content: "";
+  height: 14px;
+  width: 20px;
+  background-color: rgb(75, 75, 75);
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
 .header__banner img {
   margin: 0 auto;
@@ -15,8 +27,8 @@
   -ms-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
-  object-fit: contain;
-  width: auto;
+  object-fit: cover;
+  width: 100%;
   height: auto;
 }
 .nav--wrapper {
